@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner and Outer html</title>
+</head>
+<body>
+    <span id = "first">Hey i am span</span>
+    
+    <!--the inner HTML allows to get the html inside the element as a string.
+    It is valid only for element nodes .For other node types we can use nodeValue or data-->
+    <!--the outer HTML contains the full HTML . innerHTML + element itself-->
+
+    <!-- Text content -
+    provides the access to the text inside the element: only text, minus all tags-->
+    <!-- Hidden property-
+    hidden attribute and the DOM property specifies whether the element is visible or not-->
+    <p id = "demo"></p>
+    <script src = "error.js">
+        try{
+            adddlert("Welcome Guest");
+        }
+        catch(err){
+            document.getElementById("demo").innerHTML = err.message;
+        }
+    </script>
+</body>
+</html>
