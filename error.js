@@ -33,14 +33,40 @@
 // }
 
 //Throwing custom error
-try {
-    let age = parseInt(prompt("enter your age"));
-    if (age > 150) {
-        throw new ReferenceError("This is not true")
-    }
+// try {
+//     let age = parseInt(prompt("enter your age"));
+//     if (age > 150) {
+//         throw new ReferenceError("This is not true")
+//     }
 
-} catch (error) {
-    console.log(error.name)
-    console.log(error.message)
+// } catch (error) {
+//     console.log(error.name)
+//     console.log(error.message)
+// }
+// console.log("The script is still running")
+
+//Finally clause - error yeil kivha nhi ha block execute hoil(if it exists it runs in all cases:)
+//jar try mdhe error ala tr catch pakadto but jar catch mdhe pn error ala tr finally pakdel
+
+const f = () => {
+    try {
+        let a = 0
+        // console.log(program)
+        console.log("Program ran sucessfully")
+        return
+    }
+    catch (err) {
+        console.log("This is an error")
+        console.log(p)
+    }
+    finally {
+        console.log("I am a girl")
+
+        //operations done
+        //close the file
+        //exit the loop
+        //write to log file 
+    }
 }
-console.log("The script is still running")
+f()
+console.log("end")
