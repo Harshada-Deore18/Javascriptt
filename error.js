@@ -28,9 +28,10 @@
 //     throw new ReferenceError("harry is not good")
 // }
 // catch(error){
-//     console.log(error.name)
-//     console.log(error.message)
+//     console.log(error.name) objects
+//     console.log(error.message) objects
 // }
+
 
 //Throwing custom error
 // try {
@@ -51,7 +52,7 @@
 const f = () => {
     try {
         let a = 0
-        // console.log(program)
+        //console.log(program)
         console.log("Program ran sucessfully")
         return
     }
